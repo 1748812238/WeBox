@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tab_bar_background="#FFFFFF"
+        app:tab_divider_background="#E0E0E0"
+        app:tab_divider_height="2dp"
+        app:tab_font_size="6sp"
+        app:tab_img_font_padding="0dp"
+        app:tab_img_height="20dp"
+        app:tab_img_width="20dp"
+        app:tab_isshow_divider="true"
+        app:tab_padding_bottom="5dp"
+        app:tab_padding_top="8dp"
+        app:tab_selected_color="#00BB00"
+        app:tab_unselected_color="#282828"
+        >
+    </com.hjm.bottomtabbar.BottomTabBar>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
