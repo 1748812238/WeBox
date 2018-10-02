@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.text.Spannable;
 import android.text.SpannableString;
 import android.text.style.ImageSpan;
@@ -15,6 +17,7 @@ import java.util.regex.Pattern;
 public class SpanStringUtils {
 
 
+    @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public static SpannableString getEmotionContent(int emotion_map_type, final Context context, final TextView tv, String source) {
         SpannableString spannableString = new SpannableString(source);
         Resources res = context.getResources();
