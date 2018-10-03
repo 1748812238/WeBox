@@ -1,87 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
 
-    <EditText
-        android:id="@+id/et_sc_activity"
-        android:background="@drawable/fillet_editext"
-        android:inputType="textMultiLine"
-        android:gravity="left"
-        android:minLines="6"
-        android:textCursorDrawable="@null"
+    <!--<EditText-->
+        <!--android:id="@+id/et_sc_activity"-->
+        <!--android:background="@drawable/fillet_editext"-->
+        <!--android:inputType="textMultiLine"-->
+        <!--android:gravity="left"-->
+        <!--android:minLines="6"-->
+        <!--android:textCursorDrawable="@null"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="150dp"-->
+        <!--android:layout_marginRight="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--/>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+
+        <!--<TextView-->
+            <!--android:gravity="center"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:text="time"-->
+            <!--android:textColor="#272727"-->
+            <!--android:textSize="20dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"></LinearLayout>-->
+
+        <!--<ImageView-->
+            <!--android:id="@+id/iv_select_expression_sc_activity"-->
+            <!--android:src="@drawable/face0"-->
+            <!--android:layout_width="34dp"-->
+            <!--android:layout_height="34dp"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/tv_select_draft_sc_activity"-->
+            <!--android:layout_marginRight="10dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="插入草稿"-->
+            <!--android:textColor="#272727"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="22dp"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent" />-->
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+        <!--android:id="@+id/iv_select_photo_sc_activity"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:src="@drawable/more"-->
+        <!--android:layout_width="50dp"-->
+        <!--android:layout_height="50dp" />-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight="1"-->
+        <!--&gt;</LinearLayout>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_send_sc_activity"-->
+        <!--android:text="发布朋友圈"-->
+        <!--android:textColor="#FFFFFF"-->
+        <!--android:textSize="20dp"-->
+        <!--android:background="@drawable/fillet_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content" />-->
+
+    <github.ll.emotionboard.widget.EmoticonsEditText
+        android:id="@+id/eet_sc"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="20dp"
+        android:layout_height="200dp"
+        android:hint="say something"
         />
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        >
-
-        <TextView
-            android:gravity="center"
-            android:layout_marginLeft="10dp"
-            android:text="time"
-            android:textColor="#272727"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-
-        <LinearLayout
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"></LinearLayout>
-
-        <ImageView
-            android:id="@+id/iv_select_expression_sc_activity"
-            android:src="@drawable/face0"
-            android:layout_width="34dp"
-            android:layout_height="34dp"
-            android:layout_marginRight="5dp"
-            />
-
-        <TextView
-            android:id="@+id/tv_select_draft_sc_activity"
-            android:layout_marginRight="10dp"
-            android:gravity="center"
-            android:text="插入草稿"
-            android:textColor="#272727"
-            android:textStyle="bold"
-            android:textSize="22dp"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent" />
-    </LinearLayout>
-
     <ImageView
-        android:id="@+id/iv_select_photo_sc_activity"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="10dp"
-        android:src="@drawable/more"
-        android:layout_width="50dp"
-        android:layout_height="50dp" />
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        ></LinearLayout>
-
-    <Button
-        android:id="@+id/btn_send_sc_activity"
-        android:text="发布朋友圈"
-        android:textColor="#FFFFFF"
-        android:textSize="20dp"
-        android:background="@drawable/fillet_button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:id="@+id/iv_face0_sc"
+        android:src="@drawable/face0"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
 
 </LinearLayout>

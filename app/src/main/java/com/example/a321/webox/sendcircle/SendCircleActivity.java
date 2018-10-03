@@ -13,21 +13,31 @@ import android.widget.TextView;
 
 import com.example.a321.webox.R;
 
+import github.ll.emotionboard.widget.EmoticonsEditText;
+
 public class SendCircleActivity extends Fragment {
 
-    private EditText et;
-    private ImageView iv_select_expression;
-    private ImageView iv_select_photo;
-    private TextView tv_select_draft;
+//    private EditText et;
+//    private ImageView iv_select_expression;
+//    private ImageView iv_select_photo;
+//    private TextView tv_select_draft;
+
+    private EmoticonsEditText eet;
+    private ImageView iv;
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.activity_sendcricle,container,false);
-        et = view.findViewById(R.id.et_sc_activity);
-        iv_select_expression = view.findViewById(R.id.iv_select_expression_sc_activity);
-        iv_select_photo = view.findViewById(R.id.iv_select_photo_sc_activity);
-        tv_select_draft = view.findViewById(R.id.tv_select_draft_sc_activity);
+//        et = view.findViewById(R.id.et_sc_activity);
+//        iv_select_expression = view.findViewById(R.id.iv_select_expression_sc_activity);
+//        iv_select_photo = view.findViewById(R.id.iv_select_photo_sc_activity);
+//        tv_select_draft = view.findViewById(R.id.tv_select_draft_sc_activity);
+
+        eet = view.findViewById(R.id.eet_sc);
+        iv = view.findViewById(R.id.iv_face0_sc);
+
+
 
 
         return view;
