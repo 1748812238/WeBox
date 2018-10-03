@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     >
 
     <!--<EditText-->
@@ -85,17 +84,49 @@
         <!--android:layout_width="match_parent"-->
         <!--android:layout_height="wrap_content" />-->
 
-    <github.ll.emotionboard.widget.EmoticonsEditText
-        android:id="@+id/eet_sc"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:hint="say something"
-        />
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
 
-    <ImageView
-        android:id="@+id/iv_face0_sc"
-        android:src="@drawable/face0"
-        android:layout_width="40dp"
-        android:layout_height="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <EditText
+                android:id="@+id/et_sc"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:hint="say something"
+                />
+
+            <ImageView
+                android:id="@+id/iv_face0_sc"
+                android:src="@drawable/face0"
+                android:layout_below="@+id/et_sc"
+                android:layout_width="40dp"
+                android:layout_height="40dp" />
+            <Button
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="40dp" />
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>

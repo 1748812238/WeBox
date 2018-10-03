@@ -22,7 +22,7 @@ public class SendCircleActivity extends Fragment {
 //    private ImageView iv_select_photo;
 //    private TextView tv_select_draft;
 
-    private EmoticonsEditText eet;
+    private EditText eet;
     private ImageView iv;
 
     @Nullable
@@ -34,7 +34,7 @@ public class SendCircleActivity extends Fragment {
 //        iv_select_photo = view.findViewById(R.id.iv_select_photo_sc_activity);
 //        tv_select_draft = view.findViewById(R.id.tv_select_draft_sc_activity);
 
-        eet = view.findViewById(R.id.eet_sc);
+        eet = view.findViewById(R.id.et_sc);
         iv = view.findViewById(R.id.iv_face0_sc);
 
 
