@@ -12,7 +12,9 @@ import android.widget.ListView;
 import com.example.a321.webox.R;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class MyListActivity extends Fragment {
 
@@ -31,7 +33,14 @@ public class MyListActivity extends Fragment {
 
         for(int i = 0;i < 20; i++){
             MyListBean myListBean = new MyListBean();
-            myListBean.setMeg(" " + i);
+            for(int j = 0 ; j < 6 ; j++){
+                Map<String,Object> map = new HashMap<String,Object>();
+                map.put("img",R.drawable.icon_face_pop);
+                myListBean.getList().add(map);
+            }
+            myListBean.setId("id" + i);
+            myListBean.setMessage("message" + i);
+            myListBean.setTime("time" + i);
             data.add(myListBean);
         }
 
